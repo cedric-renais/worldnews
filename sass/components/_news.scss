@@ -17,7 +17,7 @@
 
   &__post {
     border-block-end: 1px solid var(--clr-gray);
-    padding-block-start: u.rem(20);
+    padding-block: u.rem(20);
 
     &:last-child {
       border-block-end: none;
@@ -28,6 +28,13 @@
     color: var(--clr-white);
     font-size: u.rem(20);
     font-weight: 800;
+    transition: color var(--transition);
+
+    @media (width >= u.em(1110)) {
+      &:hover {
+        color: var(--clr-gold);
+      }
+    }
   }
 
   &__description {

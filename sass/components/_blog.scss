@@ -30,13 +30,15 @@
   }
 
   &__headline {
-    align-self: center;
     font-size: var(--fz-xs);
     font-weight: 800;
     line-height: 1.1;
-  }
+    transition: color var(--transition);
 
-  &__description {
-    align-self: end;
+    @media (width >= u.em(1110)) {
+      &:hover {
+        color: var(--clr-red);
+      }
+    }
   }
 }

@@ -42,5 +42,10 @@
     text-transform: uppercase;
     padding-block: u.rem(12);
     padding-inline: u.rem(30);
+    transition: background-color 300ms ease-in-out;
+
+    &:hover {
+      background-color: var(--clr-blue);
+    }
   }
 }
