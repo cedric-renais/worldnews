@@ -1,0 +1,36 @@
+@use '../util/functions' as u;
+
+.blog {
+  display: grid;
+  gap: u.rem(30);
+
+  &__item {
+    display: grid;
+    grid-template-columns: u.rem(100) auto;
+    grid-template-rows: repeat(3, auto);
+    gap: u.rem(10) u.rem(24);
+  }
+
+  &__image {
+    grid-row: 1 / 4;
+    align-self: center;
+  }
+
+  &__number {
+    color: var(--clr-silver);
+    font-size: var(--fz-md);
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  &__headline {
+    align-self: center;
+    font-size: var(--fz-xs);
+    font-weight: 800;
+    line-height: 1.1;
+  }
+
+  &__description {
+    align-self: end;
+  }
+}

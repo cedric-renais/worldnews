@@ -1,0 +1,24 @@
+@use '../util/functions' as u;
+
+.feature {
+  display: grid;
+  gap: u.rem(18);
+
+  &__headline {
+    font-size: var(--clamp-xl);
+    font-weight: 800;
+  }
+
+  &__link {
+    display: inline-block;
+    justify-self: start;
+    background-color: var(--clr-red);
+    color: var(--clr-white);
+    font-size: var(--fz-xs);
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding-block: u.rem(12);
+    padding-inline: u.rem(30);
+  }
+}

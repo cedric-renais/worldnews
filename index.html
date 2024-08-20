@@ -8,9 +8,10 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="wrapper">
+    <header class="header wrapper">
       <a href="/">
         <img
+          class="header__logo"
           src="./assets/svg/logo.svg"
           alt="Page d'acceuil"
           width="65"
@@ -20,19 +21,19 @@
       <nav>
         <ul>
           <li>
-            <a href="#">Accueil</a>
+            <a class="header__link" href="#">Accueil</a>
           </li>
           <li>
-            <a href="#">Nouveautés</a>
+            <a class="header__link" href="#">Nouveautés</a>
           </li>
           <li>
-            <a href="#">Populaires</a>
+            <a class="header__link" href="#">Populaires</a>
           </li>
           <li>
-            <a href="#">Tendances</a>
+            <a class="header__link" href="#">Tendances</a>
           </li>
           <li>
-            <a href="#">Catégories</a>
+            <a class="header__link" href="#">Catégories</a>
           </li>
         </ul>
       </nav>
@@ -49,12 +50,16 @@
                 ./assets/images/feature-desktop.webp    1x,
                 ./assets/images/feature-desktop-2x.webp 2x
               "
+              width="730"
+              height="300"
             />
             <img
               class="feature__image"
               src="./assets/images/feature-mobile.webp"
               srcset="./assets/images/feature-mobile-2x.webp 2x"
               alt="Assortiment de blocs colorés"
+              width="343"
+              height="300"
             />
           </picture>
           <h1 class="feature__headline">L'avenir prometteur du Web 3.0 ?</h1>
@@ -69,29 +74,33 @@
         <section class="news">
           <h2 class="news__headline--big">Nouveautés</h2>
           <article class="news__post">
-            <h3 class="news__headline--small">
-              <a href="#">Hydrogène vs Voitures électriques</a>
-            </h3>
+            <a href="#">
+              <h3 class="news__headline--small">
+                Hydrogène vs Voitures électriques
+              </h3>
+            </a>
             <p class="news__description">
               Les voitures à hydrogène rattraperont-elles un jour les voitures
               électriques ?
             </p>
           </article>
           <article class="news__post">
-            <h3 class="news__headline--small">
-              <a href="#">Les inconvénients de l'art généré par l'IA</a>
-            </h3>
+            <a href="#">
+              <h3 class="news__headline--small">
+                Les inconvénients de l'art généré par l'IA
+              </h3>
+            </a>
             <p class="news__description">
               Quels sont les effets négatifs possibles de la génération d'images
               par IA à la demande ?
             </p>
           </article>
           <article class="news__post">
-            <h3 class="news__headline--small">
-              <a href="#">
+            <a href="#">
+              <h3 class="news__headline--small">
                 Le financement par capital-risque est-il en train de se tarir ?
-              </a>
-            </h3>
+              </h3>
+            </a>
             <p class="news__description">
               Le financement privé par les sociétés de capital-risque a chuté de
               50 % par rapport à l'année précédente. Nous examinons ce que cela
@@ -102,44 +111,46 @@
         <!-- Blog section -->
         <section class="blog">
           <article class="blog__item">
-            <div class="blog__number">01</div>
             <img
               class="blog__image"
               src="./assets/images/news-1.webp"
               alt="Ordinateur, clavier et cassettes audio vintage sur un bureau"
             />
-            <h3 class="blog__headline">
-              <a href="#">Redonner vie aux PC rétro ?</a>
-            </h3>
+            <div class="blog__number">01</div>
+            <a href="#">
+              <h3 class="blog__headline">Redonner vie aux PC rétro ?</h3>
+            </a>
             <p class="blog__description">
               Que se passe-t-il lorsque d'anciens PC reçoivent des mises à jour
               modernes ?
             </p>
           </article>
           <article class="blog__item">
-            <div class="blog__number">02</div>
             <img
               class="blog__image"
               src="./assets/images/news-2.webp"
               alt="Touches de clavier avec rétroéclairage rouge"
             />
-            <h3 class="blog__headline">
-              <a href="#">Top 10 des Laptops pour 2024</a>
-            </h3>
+            <div class="blog__number">02</div>
+            <a href="#">
+              <h3 class="blog__headline">Top 10 des Laptops pour 2024</h3>
+            </a>
             <p class="blog__description">
               Nos meilleures sélections pour différents besoins et budgets.
             </p>
           </article>
           <article class="blog__item">
-            <div class="blog__number">03</div>
             <img
               class="blog__image"
               src="./assets/images/news-3.webp"
               alt="Manette de jeu en l'air au-dessus d'une main"
             />
-            <h3 class="blog__headline">
-              <a href="#">L'expansion du secteur du jeu vidéo</a>
-            </h3>
+            <div class="blog__number">03</div>
+            <a href="#">
+              <h3 class="blog__headline">
+                L'expansion du secteur du jeu vidéo
+              </h3>
+            </a>
             <p class="blog__description">
               Comment la pandémie a ouvert de nouvelles opportunités.
             </p>

@@ -1,0 +1,33 @@
+@use '../util/functions' as u;
+
+.news {
+  background-color: var(--clr-blue);
+  padding-block: u.rem(24);
+  padding-inline: u.rem(20);
+
+  &__headline--big {
+    font-size: var(--clamp-lg);
+    color: var(--clr-gold);
+  }
+
+  &__post {
+    border-block-end: 1px solid var(--clr-gray);
+    padding-block: u.rem(20);
+
+    &:last-child {
+      border-block-end: none;
+    }
+  }
+
+  &__headline--small {
+    color: var(--clr-white);
+    font-size: u.rem(20);
+    font-weight: 800;
+  }
+
+  &__description {
+    color: var(--clr-silver);
+    font-size: var(--fz-body);
+    margin-block-start: u.rem(8);
+  }
+}
