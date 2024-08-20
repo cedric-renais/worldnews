@@ -1,0 +1,29 @@
+@use 'util' as u;
+
+:root {
+  // Colors
+  --clr-white: #fffdfa;
+  --clr-blue: #00001a;
+  --clr-gray: #5e607a;
+  --clr-red: #f15d51;
+  --clr-silver: #c5c6ce;
+  --clr-gold: #e9aa52;
+
+  // Font sizes
+  --fz-md: u.rem(32);
+  --fz-sm: u.rem(20);
+  --fz-xs: u.rem(18);
+  --fz-body: u.rem(16);
+
+  // Fluid typography
+  --fl-xl: clamp(
+    u.rem(40),
+    2.147887323943662rem + 1.5023474178403755vw,
+    u.rem(56)
+  );
+  --fl-lg: clamp(
+    u.rem(32),
+    1.823943661971831rem + 0.7511737089201878vw,
+    u.rem(40)
+  );
+}
