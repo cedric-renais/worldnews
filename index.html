@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./assets/svg/favicon.svg" />
@@ -8,9 +8,145 @@
   </head>
   <body>
     <!-- Header -->
-    <header></header>
+    <header class="wrapper">
+      <a href="/">
+        <img
+          src="./assets/svg/logo.svg"
+          alt="Page d'acceuil"
+          width="65"
+          height="40"
+        />
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Accueil</a>
+          </li>
+          <li>
+            <a href="#">Nouveautés</a>
+          </li>
+          <li>
+            <a href="#">Populaires</a>
+          </li>
+          <li>
+            <a href="#">Tendances</a>
+          </li>
+          <li>
+            <a href="#">Catégories</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- Main -->
-    <main></main>
+    <main>
+      <article class="wrapper grid">
+        <!-- Feature section -->
+        <section class="feature">
+          <picture>
+            <source
+              media="(min-width:1024px)"
+              srcset="
+                ./assets/images/feature-desktop.webp    1x,
+                ./assets/images/feature-desktop-2x.webp 2x
+              "
+            />
+            <img
+              class="feature__image"
+              src="./assets/images/feature-mobile.webp"
+              srcset="./assets/images/feature-mobile-2x.webp 2x"
+              alt="Assortiment de blocs colorés"
+            />
+          </picture>
+          <h1 class="feature__headline">L'avenir prometteur du Web 3.0 ?</h1>
+          <p class="feature__description">
+            Nous plongeons dans la prochaine évolution du web qui prétend
+            redonner le pouvoir des plateformes aux mains des utilisateurs. Mais
+            tient-elle vraiment ses promesses ?
+          </p>
+          <a href="#" class="feature__link">Lire l'article</a>
+        </section>
+        <!-- News section -->
+        <section class="news">
+          <h2 class="news__headline--big">Nouveautés</h2>
+          <article class="news__post">
+            <h3 class="news__headline--small">
+              <a href="#">Hydrogène vs Voitures électriques</a>
+            </h3>
+            <p class="news__description">
+              Les voitures à hydrogène rattraperont-elles un jour les voitures
+              électriques ?
+            </p>
+          </article>
+          <article class="news__post">
+            <h3 class="news__headline--small">
+              <a href="#">Les inconvénients de l'art généré par l'IA</a>
+            </h3>
+            <p class="news__description">
+              Quels sont les effets négatifs possibles de la génération d'images
+              par IA à la demande ?
+            </p>
+          </article>
+          <article class="news__post">
+            <h3 class="news__headline--small">
+              <a href="#">
+                Le financement par capital-risque est-il en train de se tarir ?
+              </a>
+            </h3>
+            <p class="news__description">
+              Le financement privé par les sociétés de capital-risque a chuté de
+              50 % par rapport à l'année précédente. Nous examinons ce que cela
+              implique.
+            </p>
+          </article>
+        </section>
+        <!-- Blog section -->
+        <section class="blog">
+          <article class="blog__item">
+            <div class="blog__number">01</div>
+            <img
+              class="blog__image"
+              src="./assets/images/news-1.webp"
+              alt="Ordinateur, clavier et cassettes audio vintage sur un bureau"
+            />
+            <h3 class="blog__headline">
+              <a href="#">Redonner vie aux PC rétro ?</a>
+            </h3>
+            <p class="blog__description">
+              Que se passe-t-il lorsque d'anciens PC reçoivent des mises à jour
+              modernes ?
+            </p>
+          </article>
+          <article class="blog__item">
+            <div class="blog__number">02</div>
+            <img
+              class="blog__image"
+              src="./assets/images/news-2.webp"
+              alt="Touches de clavier avec rétroéclairage rouge"
+            />
+            <h3 class="blog__headline">
+              <a href="#">Top 10 des Laptops pour 2024</a>
+            </h3>
+            <p class="blog__description">
+              Nos meilleures sélections pour différents besoins et budgets.
+            </p>
+          </article>
+          <article class="blog__item">
+            <div class="blog__number">03</div>
+            <img
+              class="blog__image"
+              src="./assets/images/news-3.webp"
+              alt="Manette de jeu en l'air au-dessus d'une main"
+            />
+            <h3 class="blog__headline">
+              <a href="#">L'expansion du secteur du jeu vidéo</a>
+            </h3>
+            <p class="blog__description">
+              Comment la pandémie a ouvert de nouvelles opportunités.
+            </p>
+          </article>
+        </section>
+      </article>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
