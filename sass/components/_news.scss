@@ -5,6 +5,11 @@
   padding-block: u.rem(24);
   padding-inline: u.rem(20);
 
+  @media (width >= u.em(1110)) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
+
   &__headline--big {
     font-size: var(--clamp-lg);
     color: var(--clr-gold);
@@ -12,7 +17,7 @@
 
   &__post {
     border-block-end: 1px solid var(--clr-gray);
-    padding-block: u.rem(20);
+    padding-block-start: u.rem(20);
 
     &:last-child {
       border-block-end: none;
