@@ -100,3 +100,8 @@ ul {
     gap: u.rem(30);
   }
 }
+
+// Utility classes
+.noscroll {
+  overflow-y: hidden;
+}
