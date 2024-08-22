@@ -1,0 +1,41 @@
+@use '../util' as u;
+
+.nav {
+  button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    @media (width >= u.em(1110)) {
+      display: none;
+    }
+  }
+
+  &__content {
+    @media (width < u.em(1110)) {
+      display: none;
+      position: fixed;
+      inset: 0 0 0 u.rem(120);
+      background-color: var(--clr-white);
+      padding-block: u.rem(30);
+      padding-inline: u.rem(30);
+      translate: 100vw 0;
+      transition: translate var(--transition);
+    }
+  }
+
+  &__close {
+    display: block;
+    margin-inline-start: auto;
+    margin-block-end: u.rem(86);
+  }
+
+  &__overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: var(--clr-blue);
+    opacity: 0;
+    transition: opacity var(--transition);
+  }
+}
