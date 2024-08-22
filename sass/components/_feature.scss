@@ -35,17 +35,17 @@
     display: inline-block;
     justify-self: start;
     background-color: var(--clr-red);
-    color: var(--clr-white);
+    color: var(--clr-blue);
     font-size: var(--fz-xs);
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     padding-block: u.rem(12);
     padding-inline: u.rem(30);
-    transition: background-color 300ms ease-in-out;
 
     &:hover {
       background-color: var(--clr-blue);
+      color: var(--clr-white);
     }
   }
 }

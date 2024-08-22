@@ -28,7 +28,6 @@
     color: var(--clr-white);
     font-size: u.rem(20);
     font-weight: 800;
-    transition: color var(--transition);
 
     @media (width >= u.em(1110)) {
       &:hover {

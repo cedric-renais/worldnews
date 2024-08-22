@@ -3,6 +3,7 @@
 .blog {
   display: grid;
   gap: u.rem(30);
+  padding-block-end: u.rem(24);
 
   @media (width >= u.em(1110)) {
     grid-template-columns: subgrid;
@@ -23,7 +24,7 @@
   }
 
   &__number {
-    color: var(--clr-silver);
+    color: var(--clr-gray);
     font-size: var(--fz-md);
     line-height: 1;
     font-weight: 700;
@@ -33,7 +34,6 @@
     font-size: var(--fz-xs);
     font-weight: 800;
     line-height: 1.1;
-    transition: color var(--transition);
 
     @media (width >= u.em(1110)) {
       &:hover {
