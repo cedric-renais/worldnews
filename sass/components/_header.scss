@@ -18,7 +18,9 @@
   }
 
   &__menu {
+    display: none;
     @media (width < u.rem(640)) {
+      display: block;
       position: fixed;
       inset: 0;
       background-color: var(--clr-white);

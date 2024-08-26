@@ -7,6 +7,7 @@ const buttonOpen = document.querySelector('.header__open');
 const buttonClose = document.querySelector('.header__close');
 const mediaQuery = window.matchMedia('(width < 40em)');
 const menu = document.querySelector('.header__menu');
+const links = document.querySelectorAll('.header__link');
 const main = document.querySelector('main');
 const body = document.querySelector('body');
 
@@ -81,3 +82,10 @@ mediaQuery.addEventListener('change', function (e) {
 ///////////////////////////////////////////////////////////////////////////////////////
 buttonOpen.addEventListener('click', openMenu);
 buttonClose.addEventListener('click', closeMenu);
+
+/////////////////////////////////////////////////////////////
+// Ferme le menu et navigue vers la section correspondante //
+/////////////////////////////////////////////////////////////
+links.forEach((link) => {
+  link.addEventListener('click', closeMenu);
+});
