@@ -84,6 +84,12 @@ ul {
   list-style-type: none;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 // Layout
 .wrapper {
   inline-size: min(u.rem(1110), calc(100% - u.rem(32)));

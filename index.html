@@ -18,82 +18,46 @@
           height="40"
         />
       </a>
-      <nav class="nav" aria-label="Site">
+      <nav class="header__nav">
+        <span id="Navigation" hidden>Navigation</span>
         <button
-          class="nav__open"
-          aria-label="Ouvrir la navigation"
+          class="header__open"
           aria-expanded="false"
+          aria-labelledby="Navigation"
         >
-          <span id="nav__label" hidden>Navigation</span>
-          <svg
-            width="40"
-            height="17"
-            viewBox="0 0 40 17"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <rect id="Rectangle" y="7" width="40" height="3" fill="#00001A" />
-            <rect
-              id="Rectangle_2"
-              y="14"
-              width="40"
-              height="3"
-              fill="#00001A"
-            />
-            <rect id="Rectangle_3" width="40" height="3" fill="#00001A" />
-          </svg>
+          <img
+            class="header__svg"
+            src="./assets/svg/hamburger.svg"
+            alt=""
+            width="24"
+            height="24"
+          />
         </button>
-        <div class="nav__overlay" aria-hidden="true"></div>
-        <div class="nav__content" role="dialog" aria-labelledby="nav__label">
-          <button
-            class="nav__close"
-            aria-label="Fermer la navigation"
-            aria-expanded="true"
-          >
-            <svg
-              width="32"
-              height="31"
-              viewBox="0 0 32 31"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <rect
-                id="Rectangle"
-                x="2.91846"
-                y="0.297211"
-                width="40"
-                height="3"
-                transform="rotate(45 2.91846 0.297211)"
-                fill="#00001A"
-              />
-              <rect
-                id="Rectangle_2"
-                x="0.797363"
-                y="28.5815"
-                width="40"
-                height="3"
-                transform="rotate(-45 0.797363 28.5815)"
-                fill="#00001A"
-              />
-            </svg>
+        <div class="header__menu" role="dialog" aria-labelledby="Navigation">
+          <button class="header__close" aria-label="Fermer Navigation">
+            <img
+              class="header__svg"
+              src="./assets/svg/close.svg"
+              alt=""
+              width="24"
+              height="24"
+            />
           </button>
-          <ul class="header__links">
-            <li>
-              <a class="header__link" href="#">Accueil</a>
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Accueil</a>
             </li>
-            <li>
-              <a class="header__link" href="#">Nouveautés</a>
+            <li class="header__item">
+              <a href="#" class="header__link">Nouveautés</a>
             </li>
-            <li>
-              <a class="header__link" href="#">Populaires</a>
+            <li class="header__item">
+              <a href="#" class="header__link">Populaires</a>
             </li>
-            <li>
-              <a class="header__link" href="#">Tendances</a>
+            <li class="header__item">
+              <a href="#" class="header__link">Tendances</a>
             </li>
-            <li>
-              <a class="header__link" href="#">Catégories</a>
+            <li class="header__item">
+              <a href="#" class="header__link">Catégories</a>
             </li>
           </ul>
         </div>
